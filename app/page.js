@@ -8,7 +8,7 @@ export default function Home() {
       <nav className="border-b border-gray-100 px-6 py-4">
         <div className="mx-auto flex items-center justify-start gap-3">
           <div className="flex items-center gap-2">
-            <div className="bg-blue-600 text-white font-bold text-sm w-8 h-8 rounded-md flex items-center justify-center">
+            <div className=" bg-blue-600 text-white font-bold text-sm w-8 h-8 rounded-md flex items-center justify-center">
               K
             </div>
             <span className="text-gray-900 font-semibold text-base tracking-tight">
@@ -19,7 +19,7 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="hero-strip bg-linear-to-br from-blue-700 to-blue-900 text-white px-6 py-20">
+      <section className="hero-strip bg-linear-to-br from-blue-700 to-blue-900 text-white px-6 py-10">
         <div className="max-w-2xl mx-auto text-center">
           <span className="inline-block bg-blue-500 bg-opacity-40 text-blue-100 text-xs font-semibold px-3 py-1 rounded-full mb-6 tracking-widest uppercase">
             Contact Us
@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* FORM CARD */}
       <section className="flex justify-center px-6 py-16">
-        <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8 w-full max-w-lg">
+        <div className="fade-in-up bg-white rounded-2xl border border-gray-200 shadow-sm p-8 w-full max-w-lg">
           <ContactForm />
         </div>
       </section>

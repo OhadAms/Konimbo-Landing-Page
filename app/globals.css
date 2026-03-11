@@ -1,1 +1,55 @@
+/* Global stylesheet - imported once in layout.js so it applies to the entire app.
+   The single Tailwind import makes all Tailwind classes available everywhere. */
+
 @import "tailwindcss";
+
+@keyframes popIn {
+  0%   { transform: scale(0); opacity: 0; }
+  70%  { transform: scale(1.5); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0);    }
+  20%  { transform: translateX(-8px); }
+  40%  { transform: translateX(8px);  }
+  60%  { transform: translateX(-6px); }
+  80%  { transform: translateX(6px);  }
+  100% { transform: translateX(0);    }
+}
+
+@keyframes bounceIn {
+  0%   { transform: scale(0.3); opacity: 0;   }
+  50%  { transform: scale(1.1); opacity: 1;   }
+  70%  { transform: scale(0.9);               }
+  100% { transform: scale(1);                 }
+}
+
+@keyframes fadeInUp {
+  0%   { transform: translateY(16px); opacity: 0; }
+  100% { transform: translateY(0);    opacity: 1; }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease both;
+}
+
+/* duration  delay — each one starts slightly later */
+.stagger-1 { animation: fadeInUp 0.4s 0.1s ease both; }
+.stagger-2 { animation: fadeInUp 0.4s 0.2s ease both; }
+.stagger-3 { animation: fadeInUp 0.4s 0.3s ease both; }
+.stagger-4 { animation: fadeInUp 0.4s 0.4s ease both; }
+.stagger-5 { animation: fadeInUp 0.4s 0.5s ease both; }
+
+
+.bounce-in {
+  animation: bounceIn 0.6s ease both;
+}
+
+.shake {
+  animation: shake 0.5s ease both;
+}
+
+.success-icon {
+  animation: popIn 0.5s ease both;
+}
